@@ -17,7 +17,7 @@ int main(){
 	for (int i = 0; i < numbers.size(); i++) {
 		for (int j = i; j < numbers.size(); j++) {
 			if (numbers[i] + numbers[j] == 2020) {
-				output << numbers[i] * numbers[j];	
+				output << "Parte 1: " << numbers[i] * numbers[j] << std::endl;	
 				std::cout << "Parte 1: " << numbers[i] * numbers[j] << std::endl;
 				continue;
 			}
@@ -28,7 +28,7 @@ int main(){
 		for (int j = i; j < numbers.size(); j++) {
 			for (int h = j; h < numbers.size(); h++) {
 				if(numbers[i] + numbers[j] + numbers[h] == 2020) {	
-					output << numbers[i] * (numbers[j] * numbers[h]) << std::endl;
+					output << "Parte 2: " << numbers[i] * (numbers[j] * numbers[h]) << std::endl;
 					std::cout << "Parte 2: " << numbers[i] * (numbers[j] * numbers[h]) << std::endl;
 					continue;
 				}	
